@@ -22,8 +22,8 @@ module GoogleDrive
       @drive.authorization = authorization
       # Make the timeout virtually infinite because some of the operations (e.g., uploading a large file)
       # can take very long.
-      @drive.request_options.timeout = 100_000_000
-      @drive.request_options.open_timeout_sec = 100_000_000
+#      @drive.request_options.timeout = 100_000_000
+#      @drive.request_options.open_timeout_sec = 100_000_000
     end
 
     attr_reader(:drive)
